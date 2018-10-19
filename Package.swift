@@ -18,6 +18,6 @@ let package = Package(
     
     targets: [
         .target(name: "KituraHTTPTest", dependencies: ["KituraNet", "SwiftyJSON"]),
-        .testTarget(name: "KituraHTTPTestTests", dependencies: ["KituraHTTPTest"])
+        .testTarget(name: "KituraHTTPTestTests", dependencies: ["KituraHTTPTest", "KituraNet"])
     ]
 )
